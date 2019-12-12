@@ -1,0 +1,106 @@
+<resources>
+    <!-- Base application theme. -->
+    <!-- TODO 04: Define textColorPrimary in the global theme -->
+    <!-- TODO 06: Define TextInputLayout style -->
+    <!-- TODO 08: Define Button style -->
+    <!-- TODO 09: Define Text Button style -->
+    <!-- TODO 12: Modify Toolbar title's text size -->
+    <!-- TODO 16: Set "dosis" font as the default fontFamily of the app -->
+    <!-- TODO 17: Use "convergence" font for Toolbar title, Button and TextButton. Remember using bold style -->
+    <!-- TODO 18: Define custom style for the product name label in catalog's cards. -->
+    <!-- TODO 19: Create and apply a new color theme to the application -->
+    <style name="Theme.Shrine" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name ="android:fontFamily">@font/dosis</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+    </style>
+
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="hintTextColor">@color/textColorPrimary</item>
+        <item name="helperTextTextColor">@color/TextInputOutline</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+    </style>
+
+
+    <style name="Shrine.cButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="fontFamily">@font/convergence</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Shrine.nButton" parent="Widget.MaterialComponents.Button">
+        <item name="fontFamily">@font/convergence</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Shrine.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/convergence</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Shine.Title" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/convergence</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="TextAppearance.Shrine.toolTitle" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/convergence</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Shine.toolbar" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/convergence</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Shrine.pName" parent="Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Shrine.pName</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TextAppearance.Shrine.pName" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/dosis</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Shrine.pPrize" parent="Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Shrine.pPrize</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TextAppearance.Shrine.pPrize" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/dosis</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="Widget.Shrine.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorAccent</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Shrine.toolTitle</item>
+        <item name="titleTextColor">@color/textColorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+</resources>
